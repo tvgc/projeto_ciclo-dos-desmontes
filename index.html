@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Ciclo de Desmontes</title>
 </head>
 <body>
+    <!--==================== HEADER ====================-->
     <header class="header">
         <nav class="nav container">
             <span class="nav__logo">BEMISA</span>
@@ -29,103 +33,128 @@
         </nav>
     </header>
 
-    <main>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== DADOS ====================-->
         <section class="dados section">
             <div class="dados__container container">
-                <h2 class="section__title">Informações Importantes</h2>
+                <h2 class="section__title bg-title-color">Informações Importantes</h2>
 
                 <div class="dados__desmonte grid">
                     <div class="dados__poligono">Polígono <span>CVL-01</span></div>
                     <div class="dados__desmonte">Desmonte <span>505-M</span></div>
-                    <div class="dados__data-desmonte">Data do Desmonte 13/05/2022</div>
+                    <div class="dados__data-desmonte">Data do Desmonte <span>13/05/2022</span></div>
                 </div>
 
-                <h3 class="dados__subtitle">Próximo Passo</h3>
+                <h3 class="dados__subtitle bg-title-color">Próximo Passo</h3>
                 <div class="dados__desc">Descrição <span>Iniciar Furação</span></div>
                 <div class="dados__responsavel">Responsavel <span>Denex</span></div>
             </div>
         </section>
 
+        <!--==================== PASSOS ====================-->
         <section class="passos section">
             <div class="passos__container container">
                 <h2 class="section__title">Passos do Desmonte</h2>
                 <div class="passos__data grid">
-                    <div class="passos__card">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 1</h3>
                         <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <div>Responsável: <span>Vitor (Geólogo)</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span> </div>
+                        <div class="passos__card-data-executada">Data Executada <span>10/05/22</span></div>
                     </div>
-                    <div class="passos__card">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 2</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Aprovar área à desmontar</p>
+                        <div>Responsável: <span>Fernando (Sup Des.)</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>10/05/22</span></div>
                     </div>
-                    <div class="passos__card">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 3</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Aprovar área à desmontar</p>
+                        <div>Responsável: <span>Denex</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>10/05/22</span></div>
                     </div>
-                    <div class="passos__card gray">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 4</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Limpeza do Polígono</p>
+                        <div>Responsável: <span>Op. de Mina</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>10/05/22</span></div>
                     </div>
-                    <div class="passos__card">
+
+                    <div class="passos__card red" onclick="display05()"  >
                         <h3 class="passos__card-title">Passo 5</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Iniciar furação</p>
+                        <div>Responsável: <span>Denex</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>11/05/22</span></div>
                     </div>
-                    <div class="passos__card red">
+                    <div class="passos__card--justificativa" id="passo05" >
+                        <h3 class="passos__card-title">Justificativa do atraso</h3>
+                        <p>Apesar de passo 4 informar que área estava limpa, o polícono ainda havia material solto sobre a praça</p>
+                    </div>
+                    
+                    <div class="passos__card red" onclick="display06()" >
                         <h3 class="passos__card-title">Passo 6</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Iniciar Amostragem</p>
+                        <div>Responsável: <span>Plan./Qual.</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>10/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>11/05/22</span></div>
                     </div>
-                    <div class="passos__card yellow">
+                    <div id="passo06" class="passos__card--justificativa">
+                        <h3 class="passos__card-title">Justificativa do atraso</h3>
+                        <p>Amostragem atrasou em consequencia da furação ter se etrasado</p>
+                    </div>
+
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 7</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Finalizar Furação</p>
+                        <div>Responsável: <span>Denex</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>12/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>12/05/22</span></div>
                     </div>
-                    <div class="passos__card yellow">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 8</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Finalizar amostragem</p>
+                        <div>Responsável: <span>Plan./Qual.</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>12/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>12/05/22</span></div>
                     </div>
-                    <div class="passos__card yellow">
+                    <div class="passos__card green">
                         <h3 class="passos__card-title">Passo 9</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Desmontar e liberar área</p>
+                        <div>Responsável: <span>Denex</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>13/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>13/05/22</span></div>
                     </div>
-                    <div class="passos__card yellow">
+                    <div class="passos__card gray" onclick="display10()">
                         <h3 class="passos__card-title">Passo 10</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Liberar área para lavra conforme cubagem</p>
+                        <div>Responsável: <span>Vitor (Geólogo)</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>14/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>13/05/22</span></div>
+                    </div>
+                    <div id="passo10" class="passos__card--justificativa">
+                        <h3 class="passos__card-title">Justificativa do atraso</h3>
+                        <p>Amostragem atrasou em consequencia da furação ter se etrasado</p>
                     </div>
                     <div class="passos__card yellow">
                         <h3 class="passos__card-title">Passo 11</h3>
-                        <p class="passos__card-desc">Avaliar e sugerir área de desmonte</p>
-                        <div>Responsável: <span>Vitor</span></div>
-                        <div class="passos__card-data-previsto">Data Prevista</div>
-                        <div class="passos__card-data-executada">Data Executada</div>
+                        <p class="passos__card-desc">Iniciar Lavra</p>
+                        <div>Responsável: <span>Op. Mina</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>14/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>À informar</span></div>
+                    </div>
+                    <div class="passos__card yellow">
+                        <h3 class="passos__card-title">Passo 12</h3>
+                        <p class="passos__card-desc">Finalizar Lavra</p>
+                        <div>Responsável: <span>Op. Mina</span></div>
+                        <div class="passos__card-data-previsto">Data Prevista <span>16/05/22</span></div>
+                        <div class="passos__card-data-executada">Data Executada <span>À informar</span></div>
                     </div>
 
                 </div>
@@ -134,5 +163,7 @@
             </div>
         </section>
     </main>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
